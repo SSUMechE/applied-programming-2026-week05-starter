@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools==80.9.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ap-week05"
+version = "0.1.0"
+description = "Week 5 supplied-path parametric evaluation"
+requires-python = ">=3.12,<3.13"
+dependencies = ["numpy==2.4.6"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+include = ["ap_week05*"]
+namespaces = false
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "--strict-markers"
