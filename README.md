@@ -324,10 +324,19 @@ Run it unchanged to visualize the CPU method comparison from Reading Section 2.2
 report, screenshot or extra test is required for submission.
 
 Use the existing **`applied-programming-cuda`** environment after the checks in the
-separate [CUDA/Genesis setup guide](https://github.com/SSUMechE/applied-programming-2026-week05-starter/releases/download/week05-v1-reading-v10/cuda_genesis_gpu_setup_v6.pdf) pass.
-Download its [setup files](https://github.com/SSUMechE/applied-programming-2026-week05-starter/releases/download/week05-v1-reading-v10/cuda_genesis_gpu_setup_files_v6.zip) and
-[copyable commands TXT](https://github.com/SSUMechE/applied-programming-2026-week05-starter/releases/download/week05-v1-reading-v10/cuda_genesis_gpu_setup_commands_v6.txt). In **Anaconda Prompt**, in this
-same Week 5 repository root:
+separate [CUDA/Genesis setup guide](https://github.com/SSUMechE/applied-programming-2026-week05-starter/releases/download/week05-v2-cuda-guide-v7/cuda_genesis_gpu_setup_v7.pdf) pass.
+Download its [setup files](https://github.com/SSUMechE/applied-programming-2026-week05-starter/releases/download/week05-v2-cuda-guide-v7/cuda_genesis_gpu_setup_files_v7.zip) and
+[copyable commands TXT](https://github.com/SSUMechE/applied-programming-2026-week05-starter/releases/download/week05-v2-cuda-guide-v7/cuda_genesis_gpu_setup_commands_v7.txt).
+
+The course GPU environment uses **PyTorch `2.14.0+cu126`, CUDA build `12.6`**.
+A CUDA Version of `13.x` in `nvidia-smi` describes the driver and can be correct.
+Keep a working compatible driver. No separate CUDA Toolkit reinstall is needed
+to match these numbers. The V7 supplied checks reject an incorrect package build.
+If you already completed setup, extract the V7 setup files and rerun its checks
+from that extracted folder in the existing CUDA environment. Reinstall torch
+with the guide's exact command only if its version/build differs.
+
+After those setup checks pass, use **Anaconda Prompt** in this Week 5 repository root:
 
 ```bat
 set PYTHONUTF8=1
